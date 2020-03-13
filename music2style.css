@@ -1,0 +1,28 @@
+body {
+  background-image: url("cheerful.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+	margin-left: 100px;
+	margin-top: 150px;
+}
+
+.cheertext{
+	color: white;
+	position: absolute;
+	font-size: 50px;
+	text-align: right;
+	font-family: 'Sen', sans-serif;
+	margin-top: -600px;
+	margin-left: 650px;
+  	animation: fadeIn ease 1s;
+  	-webkit-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  from{font-size: 25px}
+  to{font-size: 50px}
+  }
+}

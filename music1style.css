@@ -1,0 +1,29 @@
+body {
+  background-image: url("rain.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+	margin-left: 100px;
+	margin-top: 150px;
+}
+
+.bluetext{
+	color: white;
+	position: absolute;
+	font-size: 50px;
+	text-align: right;
+	font-family: 'Sen', sans-serif;
+	margin-top: -600px;
+	margin-left: 800px;
+  	animation: slide ease 10s;
+  	-webkit-animation: slide ease 3s;
+}
+
+@keyframes slide {
+	from {margin-top: -1000px;}
+	to {margin-top: -600px}
+  }
+}
