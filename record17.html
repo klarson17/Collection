@@ -9,6 +9,79 @@ body {
 	background: brown;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: brown;
+  color: white;
+}
+
+.muzieknootjes {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.noot-1 {
+  top: -50px;
+  left: -400;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: -30px;
+  left: -100%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: -10px;
+  left: -60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 0px;
+  left: -170%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+
+
 .record1{
 	position: fixed;
 	margin-top: 300px;
@@ -108,15 +181,29 @@ body {
 	margin-left: 10px;
 	margin-top: 450px;
 	transform: rotate(90deg);
+}
+
+.record16{
+  	position: fixed;
+  	margin-left: 450px;
+  	margin-top: 80px;
+}
+
+.note{
+	position: fixed;
+	margin-top: -210px;
+	margin-left: -490px;
   	animation: fadeIn ease 1s;
   	-webkit-animation: fadeIn ease 2s;
-  	box-shadow: 15px 15px 10px white;
+  	
 }
 @keyframes fadeIn {
   from{opacity: 0}
   to{opacity: 1}
   }
 }
+
+
 
 </style>
 </head>
@@ -136,9 +223,29 @@ body {
 <img class="record12" src="IMG-9411.JPG" width="300">
 <img class="record13" src="IMG-9412.JPG" width="300">
 <img class="record14" src="guns.jpg" width="400">
-
-<a href="record16.html">
 <img class="record15" src="IMG-9428.JPG" width="300">
+<img class="record16" src="center.PNG" width="600">
+
+<a href="music.html">
+<img class="note" src="note.png" width="300">
 </a>
+
+<div class="muzieknootjes">
+  <div class="noot-1">
+  &#9835; &#9833;
+</div>
+<div class="noot-2">
+  &#9833;
+</div>
+<div class="noot-3">
+  &#9839; &#9834;
+</div>
+<div class="noot-4">
+  &#9834;
+</div>
+</div>
 </body>
+
+
 </html>
+
